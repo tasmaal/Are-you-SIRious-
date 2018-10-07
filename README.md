@@ -1,10 +1,9 @@
-# Modeling and Simulation of Social Systems Fall 2018 – Research Plan (Template)
-(text between brackets to be removed)
+# Modeling and Simulation of Social Systems Fall 2018 – Research Plan
 
-> * Group Name: (be creative!)
-> * Group participants names: (alphabetically sorted by last name)
-> * Project Title: (can be changed later)
-> * Programming language: (Python or MATLAB)
+> * Group Name: Are you SIRious?
+> * Group participants names: Arthur Couteau, Marco Torredimare
+> * Project Title: Ebola SIR-model
+> * Programming language: MATLAB
 
 ## General Introduction
 
