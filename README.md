@@ -1,6 +1,6 @@
 # Modeling and Simulation of Social Systems Fall 2018 – Research Plan
 
-> * Group Name: Are you SIRious?
+> * Group Name: Ebola SIRum
 > * Group participants names: Arthur Couteau, Marco Torredimare
 > * Project Title: Ebola SIR-model
 > * Programming language: MATLAB
@@ -13,19 +13,22 @@
 
 ## The Model
 
+SIR model (start new or implement another one)
 (Define dependent and independent variables you want to study. Say how you want to measure them.) (Why is your model a good abstraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?)
 
 
 ## Fundamental Questions
 
+-how do we model the spreading of ebola?
+-why/how did it come again in 2017?
+-if we can predict a future outbreak?
 (At the end of the project you want to find the answer to these questions)
 (Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
 
 
 ## Expected Results
 
-(What are the answers to the above questions that you expect to find before starting your research?)
-
+-could we have predicted the outbreak in 2017? and a future one?
 
 ## References 
 
