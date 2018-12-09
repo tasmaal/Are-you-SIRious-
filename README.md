@@ -23,7 +23,7 @@ Can we obtain a model which can predict accurately the behaviour of Ebolaoutbrea
 
 ## Expected Results
 
-
+Complete simulation will fit with the latest Ebola outbreak.
 
 ## References 
 
@@ -53,16 +53,24 @@ W.  H.  Organization.Dr  congo  -  ebola  cases  and  deaths,   2018.URLhttps://
 
 # Reproducibility
 To perform the light test, follow the instructions:
-•Verify  that  all  the  functions  detailed  in  Appendix  C  are  in  the  same  folder,along with the data files DataMay2018.mat and DataAug2018.mat.
-•In the command window, enter the following command line:
+
+-Verify  that  all  the  functions  detailed  in  Appendix  C  are  in  the  same  folder,along with the data files DataMay2018.mat and DataAug2018.mat.
+
+-In the command window, enter the following command line:
 >> maxNumCompThreads 
 This will allow Matlab to use the maximum number of threads.  If you want to limit the number of cores Matlab will use, type:
 >> LASTN = maxNumCompThreads(N)
 Where N is the number of threads, and LASTN the previous maximum number.
-•Open functionBatch.m.
-•Make sure the parameters defined in part 1 have the same value as in AppendixC.
-•Make sure the part 2 of the function is uncommented (CTRL + T to uncomment selected text) and that the part 3 is commented (CTRL + R to comment selected text).
-•Run functionBatch.m.  The light test computes the evolution of populations over time, and compares it to data coming from WHO. This will take≈4 min on 4 cores.
-•A folder named OutputEbola is created by the program.  It contains text files of the different trials of the simulation.
-•The graph depicted in Figure 3 will appear.
+
+-Open functionBatch.m.
+
+-Make sure the parameters defined in part 1 have the same value as in AppendixC.
+
+-Make sure the part 2 of the function is uncommented (CTRL + T to uncomment selected text) and that the part 3 is commented (CTRL + R to comment selected text).
+
+-Run functionBatch.m.  The light test computes the evolution of populations over time, and compares it to data coming from WHO. This will take≈4 min on 4 cores.
+
+-A folder named OutputEbola is created by the program.  It contains text files of the different trials of the simulation.
+
+-The graph depicted in Figure 3 will appear.
 
