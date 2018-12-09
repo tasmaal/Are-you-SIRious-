@@ -52,7 +52,7 @@ W. H. Organization.  Dr congo north-kivu - ebola cases and deaths, 2018.  URLhtt
 W.  H.  Organization.Dr  congo  -  ebola  cases  and  deaths,   2018.URLhttps://data.humdata.org/dataset/ebola-cases-and-deaths-drc.
 
 # Reproducibility
-To perform the light test, follow the instructions:
+# Light Test:
 
 -Verify  that  all  the  functions  detailed  in  Appendix  C  are  in  the  same  folder,along with the data files DataMay2018.mat and DataAug2018.mat.
 
@@ -77,4 +77,18 @@ Where N is the number of threads, and LASTN the previous maximum number.
 -A folder named OutputEbola is created by the program.  It contains text files of the different trials of the simulation.
 
 -The graph depicted in Figure 3 will appear.
+
+
+
+# Full Test 
+
+-Open function Batch.m.
+
+-Make sure the parameters defined in part 1 have the same value as in AppendixC.
+
+-Make  sure  the  part  2  of  the  function  is  commented  and  that  the  part  3  is uncommented.
+
+-Run function Batch.m.  This will take≈2h on 4 cores.  This will compute the best set of ADN parameters based on least square.  The results will be printed in command window:m = 7 etaSE = 5 etaI = 6A file named J.mat is created, containing the values of the function defined in Equation (6)
+
+-A  graph  of  the  comparison  with  data  from  May  2018  outbreak  will  appear. This graph is depicted in Figure 4.
 
