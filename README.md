@@ -72,7 +72,7 @@ Where N is the number of threads, and LASTN the previous maximum number.
 
 -Make sure the part 2 of the function is uncommented (CTRL + T to uncomment selected text) and that the part 3 is commented (CTRL + R to comment selected text).
 
--Run functionBatch.m.  The light test computes the evolution of populations over time, and compares it to data coming from WHO. This will take≈4 min on 4 cores.
+-Run function Batch.m.  The light test computes the evolution of populations over time, and compares it to data coming from WHO. This will take≈4 min on 4 cores.
 
 -A folder named OutputEbola is created by the program.  It contains text files of the different trials of the simulation.
 
