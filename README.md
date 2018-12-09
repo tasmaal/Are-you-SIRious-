@@ -51,7 +51,7 @@ W. H. Organization.  Dr congo north-kivu - ebola cases and deaths, 2018.  URLhtt
 
 W.  H.  Organization.Dr  congo  -  ebola  cases  and  deaths,   2018.URLhttps://data.humdata.org/dataset/ebola-cases-and-deaths-drc.
 
-# Reproducibility
+## Reproducibility
 # Light Test:
 
 -Verify  that  all  the  functions  detailed  in  Appendix  C  are  in  the  same  folder,along with the data files DataMay2018.mat and DataAug2018.mat.
@@ -80,7 +80,7 @@ Where N is the number of threads, and LASTN the previous maximum number.
 
 
 
-# Full Test 
+# Full Test:
 
 -Open function Batch.m.
 
