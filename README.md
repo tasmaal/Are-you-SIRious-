@@ -57,9 +57,13 @@ To perform the light test, follow the instructions:
 -Verify  that  all  the  functions  detailed  in  Appendix  C  are  in  the  same  folder,along with the data files DataMay2018.mat and DataAug2018.mat.
 
 -In the command window, enter the following command line:
->> maxNumCompThreads 
+
+maxNumCompThreads 
+
 This will allow Matlab to use the maximum number of threads.  If you want to limit the number of cores Matlab will use, type:
->> LASTN = maxNumCompThreads(N)
+
+LASTN = maxNumCompThreads(N)
+
 Where N is the number of threads, and LASTN the previous maximum number.
 
 -Open functionBatch.m.
