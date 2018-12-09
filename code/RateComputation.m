@@ -1,4 +1,4 @@
-function [popFraction, transitionRate] = RateComputation(iTemp)
+function [popFraction, transitionRate] = RateComputation(iTemp, Outbreak)
     % Input: - iTemp: Time [days]
     % 
     % Computes fraction of population susceptible to changes from one state
@@ -19,13 +19,20 @@ function [popFraction, transitionRate] = RateComputation(iTemp)
     deltaHRd = 0.54;
     
     % Time-varying parameters
-    if(iTemp < 150)
+    if(strcmp(Outbreak,'Aug'))
+        timePhase1 = 150;
+        timePhase2 = 151;
+    elseif(strcmp(Outbreak,'May'))
+        timePhase1 = 5;
+        timePhase2 = 9;
+    end
+    if(iTemp < timePhase1)
         lambdaH  = 0.33;
         muIH     = 0.10; % [1/days]
         deltaIH  = 0.51;
         deltaIF  = 0.10;
         deltaIRd = 0.39;
-    elseif(iTemp < 160)
+    elseif(iTemp < timePhase2)
         lambdaH  = 0.02;
         muIH     = 0.20; % [1/days]
         deltaIH  = 0.80;

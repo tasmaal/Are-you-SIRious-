@@ -1,6 +1,7 @@
-function ADNTempIter(Network, fileID)
+function ADNTempIter(Network, fileID, Outbreak)
     % Input: - Network: Structure containing the network
-    %        - fileID: Reference to output file 
+    %        - fileID: Reference to output file
+    %        - Outbreak: May or Aug
     %
     % Iterates network over time: create edges between nodes, calls
     % RateComputation, spreads the infection, update population states and 
@@ -94,7 +95,7 @@ function ADNTempIter(Network, fileID)
             %% 2. Change of state
 
             %% 2.1 Stochastic compartemental model (cf Table 2)
-            [popFraction, transitionRate] = RateComputation(iTemp);
+            [popFraction, transitionRate] = RateComputation(iTemp, Outbreak);
 
             for iNode = randperm(length(activesIndices))  % For each active node                
                 state = Network.state{activesIndices(iNode)};

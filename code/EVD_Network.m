@@ -1,6 +1,7 @@
-function EVD_Network(Parameters,fileID)
+function EVD_Network(Parameters,fileID,Outbreak)
         % Input: - Network: Structure containing the network
-        %        - fileID: Reference to output file 
+        %        - fileID: Reference to output file
+        %        - Outbreak: May or Aug
         %
         % Calls Activity_distribution to initialize the nodes' activity potential.
         % Calls ADNTempIter to iterate over time.
@@ -22,5 +23,5 @@ function EVD_Network(Parameters,fileID)
     Network.activity_potential = Activity_distribution(N, gamma);
     
     % Evolution of the network
-    ADNTempIter(Network, fileID);
+    ADNTempIter(Network, fileID, Outbreak);
 end
